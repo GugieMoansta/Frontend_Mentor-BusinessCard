@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info">
+      <div class="textDisplay">
+        <h1 id="whiteColor" class="bolded">Get <span id="purpleColor">insights</span> that help your business grow.</h1>
+        <p id='fadedColor'>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency</p>
+      </div>
+    </div>
+    <div class="imgDisplay">
+      <img class='imgMobile' src="images/image-header-mobile.jpg" alt="" media='screen and (max-width: 600px)'>
+      <img class='imgDesktop'src="images/image-header-desktop.jpg" alt="" media='screen and (min-width:600px)'>
+    </div>
+    <div class="stats">
+      <div class="bolded statNum1" id="whiteColor">10k+</div>
+      <div id="fadedColor" class="statTemp1">COMPANIES</div>
+      <br>
+      <div class="bolded statNum2" id="whiteColor">314</div>
+      <div id="fadedColor" class="statTemp2">TEMPLATES</div>
+      <br>
+      <div class="bolded statNum3" id="whiteColor">12M+</div>
+      <div id="fadedColor" class="statTemp3">QUERIES</div>
+      <br>
+    </div>
+  </div>
+</body>
+</html>

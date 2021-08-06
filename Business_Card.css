@@ -1,0 +1,146 @@
+body
+{
+    padding:20% 5%;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', 'Lexend Deca',sans-serif;
+}
+.container{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        'info img'
+        'info img'
+        'stats img'
+    ;
+    min-width: 330px;
+    justify-content: center;
+    background-color: hsl(244, 38%, 16%);    
+    border-radius: 15px;
+}
+.info
+{
+    grid-area: info;
+    text-align: center;
+}
+.textDisplay
+{
+    padding: 5% 15%;
+}
+.imgDisplay
+{
+    grid-area: img;
+}
+.stats
+{
+    grid-area: stats;
+    text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'StatNum1 StatNum2 StatNum3'
+            'StatTemp1 StatTemp2 StatTemp3'
+        ;
+}
+.imgMobile
+{
+    display:none;
+}
+.imgDesktop
+{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    border-top-right-radius: 15px ;
+    border-bottom-right-radius: 15px;
+}
+#purpleColor
+{
+    color: hsl(277, 64%, 61%);
+}
+#whiteColor
+{
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+    font: 'Inter';
+}
+#fadedColor
+{
+    color:hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font: 'Lexend Deca';
+}
+
+.statNum1 {
+    grid-area: StatNum1;
+}
+.statTemp1
+{
+    grid-area: StatTemp1;
+}
+.statNum2 {
+    grid-area: StatNum2;
+}
+.statTemp2
+{
+    grid-area: StatTemp2;
+}
+.statNum3 {
+    grid-area: StatNum3;
+}
+.statTemp3
+{
+    grid-area: StatTemp3;
+}
+
+/* Mobile */
+@media (max-width: 600px)
+{ 
+    
+    .container
+    {
+        height: 80%;
+        min-width: 300px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'img'
+            'info'
+            'stats'
+        ;
+    }
+    .imgMobile
+    {
+        display: block;
+        box-sizing: content-box;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .imgDesktop
+    {
+        display: none;
+    }
+    .stats
+    {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr .3fr .1fr .3fr .1fr .3fr;
+        grid-template-areas: 
+            'StatNum1'
+            'StatTemp1'
+            'StatNum2'
+            'StatTemp2'
+            'StatNum3'
+            'StatTemp3'
+        ;
+    }
+
+    
+}
